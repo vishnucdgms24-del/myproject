@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17253d">
+  <meta name="description" content="Join Code Collective, your campus coding club for curious minds of every experience level.">
+  <title>Join Us — Code Collective</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="join-page">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Code Collective home"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>code<span class="brand-accent">collective</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="activities.html">Activities</a><a href="team.html">Team</a><a href="events.html">Events</a><a class="nav-cta" href="join.html" aria-current="page">Join the club <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero join-hero">
+      <div class="container page-hero-inner">
+        <span class="eyebrow"><span class="live-dot"></span> Your next chapter starts here</span>
+        <h1>Curiosity looks<br><span>good on you.</span></h1>
+        <p>Tell us a little about yourself and we’ll be in touch with the next meetup. No commitment, no awkward interview—just a friendly hello.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Join us</span></div>
+      </div>
+    </section>
+    <section class="join section-pad">
+      <div class="container join-grid">
+        <div class="join-copy">
+          <span class="eyebrow"><span class="live-dot"></span> Everyone’s welcome</span>
+          <h2>Come as<br><span>you are.</span></h2>
+          <p>Open to every department and every year. Let us know how to reach you and we’ll share details about the next club meetup.</p>
+          <div class="join-detail"><span aria-hidden="true">✳</span><span>Bring your curiosity. We’ll bring the snacks.</span></div>
+        </div>
+        <form class="join-form" id="join-form" novalidate>
+          <h3>Come hang out.</h3>
+          <p class="form-intro">Tell us a little about yourself.</p>
+          <div class="form-row"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Alex Morgan" autocomplete="name" required minlength="2"><span class="field-error" id="name-error"></span></div>
+          <div class="form-row"><label for="email">College email</label><input id="email" name="email" type="email" placeholder="you@college.edu" autocomplete="email" required><span class="field-error" id="email-error"></span></div>
+          <div class="form-split">
+            <div class="form-row"><label for="department">Department</label><select id="department" name="department" required><option value="" disabled selected>Choose one</option><option>Computer Science</option><option>Engineering</option><option>Arts & Humanities</option><option>Business</option><option>Science</option><option>Other</option></select><span class="field-error" id="department-error"></span></div>
+            <div class="form-row"><label for="year">Year of study</label><select id="year" name="year" required><option value="" disabled selected>Choose one</option><option>First year</option><option>Second year</option><option>Third year</option><option>Fourth year</option><option>Postgraduate</option></select><span class="field-error" id="year-error"></span></div>
+          </div>
+          <button class="button button-coral form-submit" type="submit">I’m interested <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          <p class="form-privacy">Just club updates. Never spam, promise.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>code<span class="brand-accent">collective</span></span></a><p>Made with curiosity (and probably coffee)<br>at your college campus.</p></div>
+      <div class="footer-social"><span>LET’S BE INTERNET FRIENDS</span><div><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year"></span> Code Collective</span><a href="events.html">See upcoming events ↗</a><span>Built together, on campus.</span></div>
+  </footer>
+</body>
+</html>
